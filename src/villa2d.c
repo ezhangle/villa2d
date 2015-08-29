@@ -135,6 +135,7 @@ villa2dImage *villa2dCreateImage(const char *filename) {
   image->width = width;
   image->height = height;
   memcpy(image->imageData, imageData, imageDataSize);
+  free(imageData);
   return image;
 }
 
